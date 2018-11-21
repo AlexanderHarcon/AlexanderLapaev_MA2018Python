@@ -3,6 +3,7 @@ import random
 
 num_range = random.randrange(0,100)
 num_guesse = 7
+print("\n***New Game 0..100***" + "\nNumber of player attempts 7")
 
 def user_input(player):
     player_choice = int(player)
