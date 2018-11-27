@@ -40,15 +40,15 @@ def restart():
 
 def draw(canvas):
     if secund <=0:
-        canvas.draw_text("00." + str(secund), [140,112], 48, "Red")
+        canvas.draw_text("00." + str(secund), [140,112], 48, "Orange")
     else:
         if secund <= 9.9:   
             canvas.draw_text("0"+str(secund), [140,112], 48, "Red")
         else:
-            canvas.draw_text(str(secund), [140,112], 48, "Red")
-    canvas.draw_text(str(minut )+ ":", [103,112], 48, "Red")
+            canvas.draw_text(str(secund), [140,112], 48, "Orange")
+    canvas.draw_text(str(minut )+ ":", [103,112], 48, "Orange")
 
-    canvas.draw_text(str(win_count) +"/"+ str(lose_count), [230,25], 20, "Green")
+    canvas.draw_text(str(win_count) +"/"+ str(lose_count), [230,25], 20, "Yellow")
 def timer():
     global secund, minut
     secund += 0.1 
