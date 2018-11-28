@@ -43,7 +43,7 @@ def draw(canvas):
         canvas.draw_text("00." + str(secund), [140,112], 48, "Orange")
     else:
         if secund <= 9.9:   
-            canvas.draw_text("0"+str(secund), [140,112], 48, "Red")
+            canvas.draw_text("0"+str(secund), [140,112], 48, "Orange")
         else:
             canvas.draw_text(str(secund), [140,112], 48, "Orange")
     canvas.draw_text(str(minut )+ ":", [103,112], 48, "Orange")
